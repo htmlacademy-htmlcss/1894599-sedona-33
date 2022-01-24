@@ -8,5 +8,125 @@
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
+<header class="main-header">
+  <nav class="navigation">
+    <img class="logo" scr="" alt="Герб города Седона">
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link">Главная</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">О Седоне</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="catalog.html">Гостиницы</a>
+      </li>
+    </ul>  
+  </nav>
+  <div>
+    <ul class="navigation-user">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">
+          <span class="visually-hidden">Лайки</span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Хочу сюда</a> 
+      </li>
+    </ul> 
+    </div>
+</header>
+
+<main class="main-index">
+  <h1><span class="visually-hidden">Седона</span></h1>
+  <p class="main-information">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+  <section class="advantages">
+    <h2 class="caption-advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
+    <ol class="advantages-list">
+      <li class="advantages-item">
+        <h3 class="captoin-advantages-item">Настоящий городок</h3>
+        <p class="advantages-item">— №1 —<br>Седона — не аттракцион для туристов, там течёт своя жизнь</p> <!--возможно,-№1- это пункт списка?-->
+          <ul class="advantages-town-list">
+            <li class="advantages-town-item">
+              <h4 class="advantages-town-item-captoin">Жильё</h4>
+              <p class="advantages-town-item">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="advantages-town-item">
+              <h4 class="advantages-town-item-captoin">Еда</h4>
+              <p class="advantages-town-item">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li>
+              <h4 class="advantages-town-item-captoin">Сувениры</h4>
+              <p class="advantages-town-item">Не только китайского, но и настоящего местного производства!</p>
+            </li>
+          </ul>
+      </li>
+      <li class="advantages-item">
+        <h3 class="captoin-advantages-item">Там есть мост дьявола</h3>
+        <p class="advantages-item">— №2 —<br>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+      </li>
+      <li class="advantages-item">
+        <h3 class="captoin-advantages-item">Небольшая площадь</h3>
+        <p class="advantages-item">— №3 —<br>Все достопримечательности находятся очень близко</p>
+      </li>
+      <li class="advantages-item">
+        <h3 class="captoin-advantages-item">Красивая дорога</h3>
+        <p class="advantages-item">— №4 —<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+      <li class="advantages-item">
+        <h3 class="captoin-advantages-item">Мало туристов</h3>
+        <p class="advantages-item">— №5 —<br>Большинство едет в Гранд Каньон и толпится там</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="booking">
+    <h2><span class="visually-hidden">Забронировать гостиницу</span></h2>
+    <p class="info-booking">Заинтересовались?</p>
+    <p class="booking">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <section class="mail">
+    <h2 class="mail-caption">Подпишитесь на рассылку</h2>
+    <p class="mail-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <label for="e-mail"><span class="visually-hidden">Подписка на рассылку</span></label>
+      <input type="text" id="e-mail" name="e-mail" value="Ваш e-mail">
+     <button class="button" type="submit">Подписаться</button>
+    </form>
+  </section>
+
+  <section class="network">
+    <h2><span class="visually-hidden">Соцсети</span></h2>
+    <ul class="network-list">
+      <li class="network-item">
+        <a class="button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="network-item">
+        <a class="button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="network-item">
+        <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">Youtube</span></a>
+      </li>
+    </ul>
+  </section>
+  <div class="contacts-phone">
+    <h2><span class="visually-hidden">Телефон</span></h2>
+    <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+  </div>
+  <div class="contacts-site">
+    <h2><span class="visually-hidden">Сайт разработчика</span></h2>
+    <a class="button" href="https://htmlacademy.ru/"><span class="visually-hidden">Html Academy</span></a>
+  </div>
+</footer>
+
   </body>
 </html>
