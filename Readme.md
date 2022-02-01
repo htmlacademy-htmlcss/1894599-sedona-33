@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валерия Журина](https://up.htmlacademy.ru/htmlcss/33/user/1894599).
-* Наставник: [Маргарита Попова](https://htmlacademy.ru/profile/lipsum).
+* Наставник: [Виктория Куликова](https://htmlacademy.ru/profile/id293745).
 
 ---
 

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  } /* я не вижу а макете ничего другого, нет курсива,например. не нужно ничего больше прописывать?*/
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color:#ffffff;
+  }
+
+  .main-header {
+    background-color: #F2F2F2;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .navigation-link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+
+
+
+  .button {
+    background: #756257;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .suscribe-main {
+    background: #83B3D3;
+    background-image: url("../images/footer/background-bottom.jpg");
+    color: #FFFFFF;
+    }
