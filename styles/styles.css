@@ -6,7 +6,7 @@
     font-display: swap;
   }
   
-  @font-face {
+@font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
@@ -14,9 +14,9 @@
     font-display: swap;
   } /* я не вижу а макете ничего другого, нет курсива,например. не нужно ничего больше прописывать?*/
 
-  body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 22px;
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color:#ffffff;
@@ -34,21 +34,290 @@
     color: #000000;
   }
 
-
-
-
-  .button {
-    background: #756257;
-    color: #FFFFFF;
+  .navigation-item {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .reasons-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
     text-transform: uppercase;
   }
 
+  .reasons-text {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .advantages-title,
+  .reasons-item-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .advantages-text,
+  .reasons-item-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .light12-back {
+    background: rgba(131, 179, 211, 0.12);
+  }
+  .light2-back {
+    background: rgba(131, 179, 211, 0.2);
+  }
+
+ /*.blue-back {
+  background: #83B3D3;
+  color: #FFFFFF;
+}  */ /*вложенный список тоже с данными параметрами,а не нужно*/
+
+  .booking-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .booking-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+  }
+  
   .suscribe-main {
     background: #83B3D3;
     background-image: url("../images/footer/background-bottom.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     color: #FFFFFF;
+    text-align: center;
     }
+
+  .suscribe-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    }
+  .suscribe-text {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+
+
+  .contacts-phone{
+    text-decoration: none;
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+    /*кнопки*/
+    .button-header {
+      background: #756257;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .booking-button {
+      background: #756257;
+      border-radius: 10px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .suscribe-button {
+      background: #83B3D3;
+      border-radius: 0px 10px 10px 0px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .button-blue {
+      background: #83B3D3;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .buttom-reset {
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .product-card-button {
+      background: #756257;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  
+    .button-loading {
+      background: #83B3D3;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .button-pagination-one{
+      background: #F2F2F2;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .button-pagination {
+      background: #83B3D3;
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .buttom-green {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: #7DB54F;
+      border-radius: 4px;
+    }
+
+
+    /*КАТАЛОГ*/
+
+  .hotels {
+    background: #83B3D3;
+    background-image: url("../images/main/catalog/catalog-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+  } 
+
+  .breadcrumbs-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+ .catalog-filter-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+ .control-input {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  
+  .inner-text {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+  }
+
+  .product-card-link, 
+  .product-card-title {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .product-card-price {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: normal;
+    color: #333333;
+  }
+
+  .rating-total {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333; 
+  }
+
+  .hostel-page {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+  }
+
+
