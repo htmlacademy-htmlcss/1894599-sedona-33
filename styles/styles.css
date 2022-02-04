@@ -12,7 +12,7 @@
     font-weight: 700;
     src: url("fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
-  } /* я не вижу а макете ничего другого, нет курсива,например. не нужно ничего больше прописывать?*/
+  } 
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -43,6 +43,13 @@ body {
     color: #FFFFFF;
   }
 
+  .intro {
+    background: #83B3D3;
+    background-image: url("../images/main/index/background-top.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
   .reasons-title {
     font-weight: bold;
     font-size: 30px;
@@ -51,14 +58,13 @@ body {
     text-transform: uppercase;
   }
 
-  .reasons-text {
+  .reasons-text{
     font-size: 22px;
     line-height: 36px;
     text-align: center;
     color: #333333;
   }
 
-  .advantages-title,
   .reasons-item-title {
     font-weight: bold;
     font-size: 24px;
@@ -67,26 +73,37 @@ body {
     text-transform: uppercase;
   }
 
-  .advantages-text,
-  .reasons-item-text {
-    font-weight: normal;
+  .reasons-item-description {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: #333333;
   }
 
-  .light12-back {
-    background: rgba(131, 179, 211, 0.12);
+  .reasons-item-container {
+    background: #83B3D3;
+    color: #FFFFFF;
   }
-  .light2-back {
+
+  .small-area,
+  .few-tourists,
+  .reasons-item-house,
+  .reasons-item-souvenir {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
+  }
+
+  .road {
     background: rgba(131, 179, 211, 0.2);
   }
 
- /*.blue-back {
-  background: #83B3D3;
-  color: #FFFFFF;
-}  */ /*вложенный список тоже с данными параметрами,а не нужно*/
+  p.reasons-item-description,
+  /*я не придумала других вариантов обойти это место так мне тоже не нра*/.text-grey {
+   color: #333333;
+  }
+
+  /*это мне тоже не нра, эт костыль*/.road-title {
+    color: #000000;
+  }
 
   .booking-title {
     font-weight: bold;
@@ -123,8 +140,6 @@ body {
     font-size: 22px;
     line-height: 26px;
   }
-
-
 
   .contacts-phone{
     text-decoration: none;
