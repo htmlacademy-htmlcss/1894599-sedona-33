@@ -139,11 +139,13 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    text-align: center;
     }
   .suscribe-text {
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
+    text-align: center;
   }
 
   .contacts-phone{

@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/flex.css">
   </head>
 
-  <body>
-
+  <body class="main-container">
     <header class="inner-header">
-      <nav class="navigation">
+      <nav class="navigation nav-container">
         <a class="navigation-logo" href="index.html">
           <img src="images/header/logo-sedona.svg" width="139" height="70" alt="Герб города Седона">
         </a>
+        <div class="lists-container">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -41,10 +42,11 @@
             <a class="button button-header" href="#">Хочу сюда</a>
           </li>
         </ul>
+      </div>
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner main-wrap">
     <div class="hotels">
       <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -133,7 +135,7 @@
         <span class="visually-hidden">Показать списком</span>
       </a>
 
-
+    <div class="wrap-product-card">
       <div class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="images/main/catalog/hotel-1.jpg" height="206"
@@ -185,11 +187,13 @@
         <button class="button button-blue" type="submit">В избранное</button>
         <b class="rating-total">Рейтинг: 9,2</b>
       </div>
+    </div>
 
 
       <button class="button button-loading" type="button">Загрузить ещё</button>
-
-      <ol class="pagination">
+      
+<div class="wrap-pagination">
+      <ol class="pagination wrap-pagination-item">
         <li class="pagination-item">
           <button class="button-pagination-one" type="button">
             <a class="pagination-link pagination-current">1</a>
@@ -227,8 +231,8 @@
           <option value="6">6</option>
         </select>
       </label>
-
-    </main>
+    </div>
+   
 
       <section class="suscribe">
         <h2 class="suscribe-title">Подпишитесь на рассылку</h2>
@@ -241,7 +245,7 @@
           <button class="suscribe-button button" type="submit">Подписаться</button>
         </form>
       </section>
-
+    </main>
     <footer class="inner-footer">
       <div class="social">
         <h2 class="visually-hidden">Соцсети</h2>
