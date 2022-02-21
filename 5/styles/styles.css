@@ -24,11 +24,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   }
 
   .main-header {
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
@@ -48,12 +48,7 @@ body {
     color: #FFFFFF;
   }
 
-  .intro {
-    background: #83B3D3;
-    background-image: url("../images/main/index/background-top.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
+
 
   .reasons-title {
     font-weight: bold;
@@ -102,11 +97,11 @@ body {
   }
 
   p.reasons-item-description,
-  /*я не придумала других вариантов обойти это место так мне тоже не нра*/.text-grey {
+  .text-grey {
    color: #333333;
   }
 
-  /*это мне тоже не нра, эт костыль*/.road-title {
+  .road-title {
     color: #000000;
   }
 
@@ -128,7 +123,6 @@ body {
   .suscribe-main {
     background: #83B3D3;
     background-image: url("../images/footer/background-bottom.jpg");
-    background-size: 100% auto;
     background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: center;
@@ -181,6 +175,7 @@ body {
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
+      text-decoration: none;
     }
 
     .suscribe-button {
@@ -206,11 +201,13 @@ body {
       color: #FFFFFF;
     }
 
-    .buttom-reset {
+    .button-reset {
       font-size: 18px;
       line-height: 23px;
       text-align: center;
       color: #FFFFFF;
+      background-color: transparent;
+      border: none;
     }
 
     .product-card-button {
@@ -281,7 +278,7 @@ body {
   .hotels {
     background: #83B3D3;
     background-image: url("../images/main/catalog/catalog-background.jpg");
-    background-size: 100% auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     color: #FFFFFF;
   } 
