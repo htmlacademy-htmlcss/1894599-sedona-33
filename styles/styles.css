@@ -42,7 +42,7 @@ body {
   .navigation-item {
     font-weight: bold;
     font-size: 16px;
-    line-height: 20px;
+    
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -141,6 +141,10 @@ body {
     line-height: 26px;
     text-align: center;
   }
+  p.suscribe-index-text {
+  color: #FFFFFF;
+}
+  
 
   .contacts-phone{
     text-decoration: none;
