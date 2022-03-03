@@ -126,7 +126,7 @@ ul.navigation-item {
     margin: 0;
 }
 
-/*!!!!*/
+
 .reasons-item-container,
 .reasons-item-house,
 .reasons-item-food,
@@ -388,6 +388,9 @@ h2, h3, h4 {
     background: #F2F2F2;
     border-radius: 4px;
   }
+  .stars {
+      width: 133px;
+  }
 
   .wrap-button-loading{
     border: 1px solid #E6E6E6;
@@ -465,4 +468,26 @@ bottom: 10px;
 .reasons-item-title {
     margin: 0;
     padding-bottom: 20px;
+}
+ 
+.social-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.star-4 {
+    background-image: url("../images/main/catalog/stars-4.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.star-3 {
+    background-image: url("../images/main/catalog/stars-3.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.star-2 {
+    background-image: url("../images/main/catalog/stars-2.svg");
+    background-repeat: no-repeat;
+    background-position: left;
 }
