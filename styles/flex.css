@@ -491,3 +491,218 @@ bottom: 10px;
     background-repeat: no-repeat;
     background-position: left;
 }
+
+/*состояния*/
+.navigation-link:hover {
+    color: rgba(117, 98, 87, 1);
+}
+.navigation-link:focus{
+    color: rgba(117, 98, 87, 0.3);
+}
+.button-header:hover,
+.booking-button:hover {
+    color: #FFFFFF;
+    background: #615048;
+}
+.button-header:focus,
+.booking-button:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background: #615048;
+}
+.field-input {
+    border: none;
+}
+.field-input:hover {
+    background: #E6E6E6;
+}
+.field-input:focus {
+    border: 3px solid #83B3D3;
+}
+.contacts-phone:hover {
+color: #756257;
+}
+.contacts-phone:focus {
+    color: #756257;
+    opacity: 0.3;
+}
+.product-card-image:hover {
+    opacity: 0.6;
+}
+.product-card-image:focus {
+    opacity: 0.3;
+}
+.product-card-button:hover {
+background: #615048;
+border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+
+/*не работает*/
+.product-card-button:focus {
+    color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*попап*/
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 242, 242, 0.8);
+  }
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 68px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+  }
+.modal-booking {
+    width: 715px;
+  }
+.field-group {
+    margin-bottom: 45px;
+    display: flex;
+justify-content: space-between;
+width: auto;
+}
+.modal-close-button {
+    position: absolute;
+    padding: 20px;
+    top: 0px;
+    right: 0px;
+    background-color: #F2F2F2;;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  } 
+
+  .modal-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+.wrap-booking {
+    display: flex;
+    justify-content: space-between;
+}
+.booking-label {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    width: 155px;
+}
+.field {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    border: none;
+   width: 420px;
+   padding-left: 19px;
+}
+/*не работает*/
+.field::after {
+    background-image: url("../images/main/index/icon-popap.svg");
+    background-position: right;
+
+}
+
+.form-adults,
+.form-children {
+    width: 133px;
+} 
+
+.modal-booking-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-style: none;
+    width: 575px;
+    background: #83B3D3;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.tooltip {
+    position: absolute;
+    margin-left: 5px;
+}
+  
+.tooltip-icon {
+    padding: 10px 13px;
+    display: block;
+}
+.tooltip-toggle {
+    background: #83B3D3;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+    background: #68A2CA;
+    border-radius: 50%;
+  }
+  .tooltip-text {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: none;
+    padding: 15px 18px 18px 22px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: block;
+    width: 216px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+  }
+  .tooltip-text:after {
+    content:'';
+    background-image: url("../images/main/index/tooltip.svg");
+    width: 19px;
+    height: 9px;
+    position:absolute;
+    top: 100%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+    .tooltip-toggle:hover + .tooltip-text,
+    .tooltip-toggle:focus + .tooltip-text {
+    display: block;
+    }
+
+.modal-container-close {
+  display: none;
+} 
