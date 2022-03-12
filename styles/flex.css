@@ -186,6 +186,7 @@ padding: 0 75px;
 .suscribe-form {
     display: flex;
     padding: 0;
+    justify-content: center;
 }
 .field-input {
     padding-left: 22px;
@@ -283,7 +284,7 @@ h2, h3, h4 {
 
   .hotels {
     width: 1200px;
-    height: 338px;
+    height: 408px;
     padding: 35px 72px 83px;
     box-sizing: border-box;
   }
@@ -492,6 +493,53 @@ bottom: 10px;
     background-position: left;
 }
 
+
+.range-scale {
+    position: relative;
+    margin-bottom: 16px;
+    border: 2px solid #FFFFFF;
+  }
+  .range-bar {
+    position: absolute;
+    border: 2px solid #FFFFFF;
+  }
+  .range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .range-toggle:focus {
+    
+    border: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .range-toggle:active {
+border: 2px solid #83B3D3;
+box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  }
+
+
+.toggle-min {
+    top: -10px;
+    left: -10px;
+  }
+  
+  .toggle-max {
+    top: -10px;
+    right: -10px;
+  }
+
+
 /*состояния*/
 .navigation-link:hover {
     color: rgba(117, 98, 87, 1);
@@ -517,6 +565,7 @@ bottom: 10px;
 }
 .field-input:focus {
     border: 3px solid #83B3D3;
+    outline: none;
 }
 .contacts-phone:hover {
 color: #756257;
@@ -548,10 +597,6 @@ border-radius: 4px;
 
 
 
-
-
-
-
 /*попап*/
 .modal-container {
     position: fixed;
@@ -573,17 +618,18 @@ border-radius: 4px;
 .modal-booking {
     width: 715px;
   }
-.field-group {
-    margin-bottom: 45px;
+.booking-form-field {
     display: flex;
-justify-content: space-between;
-width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 20px 0;
 }
 .modal-close-button {
     position: absolute;
     padding: 20px;
-    top: 0px;
-    right: 0px;
+    top: 60px;
+    right: 60px;
     background-color: #F2F2F2;;
     border: none;
     border-radius: 50%;
@@ -607,6 +653,8 @@ width: auto;
     font-size: 18px;
     line-height: 40px;
     width: 155px;
+    display: flex;
+    align-items: center;
 }
 .field {
     font-weight: bold;
@@ -615,14 +663,7 @@ width: auto;
     background: #F2F2F2;
     border-radius: 4px;
     border: none;
-   width: 420px;
-   padding-left: 19px;
-}
-/*не работает*/
-.field::after {
-    background-image: url("../images/main/index/icon-popap.svg");
-    background-position: right;
-
+   overflow: hidden;
 }
 
 .form-adults,
@@ -647,8 +688,8 @@ width: auto;
 }
 
 .tooltip {
-    position: absolute;
     margin-left: 5px;
+    display: flex;
 }
   
 .tooltip-icon {
@@ -703,6 +744,47 @@ width: auto;
     display: block;
     }
 
+.button-calendar-icon path {
+fill: #a9a9a9;
+}
+.button-calendar {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.button-calendar:hover,
+.button-calendar:focus {
+    background: transparent;
+}
+
+.button-calendar:hover path,
+.button-calendar:focus path {
+fill: #000000;
+}
+
+.button-calendar:active path,
+.button-calendar-icon:active path {
+fill: #81b3d2;
+}
+
+.booking-text-wrong,
+.booking-text-correctly {
+font-weight: 400;
+font-size: 16px;
+line-height: 40px;
+padding-left: 160px;
+
+}
+.booking-text-wrong {
+    color: #FF5757;
+}
+.booking-text-correctly {
+    color: #333333;
+}
+
 .modal-container-close {
-  display: none;
+  display: none; 
 } 
