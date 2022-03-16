@@ -61,7 +61,12 @@
       <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link-index" href="index.html"><span class="visually-hidden">Главная</span></a>
+            <a class="breadcrumbs-link-index" href="index.html"><span class="visually-hidden">Главная</span>
+              <svg width="12" height="12" fill="none">
+                <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/>
+                <path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/>
+              </svg>
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -75,18 +80,21 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="checkmark"></span>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked>
+                  <span class="checkmark"></span>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <span class="checkmark"></span>
                   Wi-Fi
                 </label>
           </fieldset>
@@ -95,20 +103,23 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control control-radio">
                   <input class="control-input" type="radio" name="type-house" value="Hotel" checked>
+                  <span class="checkmark-radio"></span>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control control-radio">
                   <input class="control-input" type="radio" name="type-house" value="Motel">
+                  <span class="checkmark-radio"></span>
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control control-radio">
                   <input class="control-input" type="radio" name="type-house" value="Apartments">
+                  <span class="checkmark-radio"></span>
                   Апартаменты
                 </label>
               </li>
@@ -117,11 +128,11 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label class="control">От
-              <input class="control-input" type="number" min="0" max="9000" name="price" value="от 0 до 9000">
+            <label class="control-price">От
+              <input class="control-input-price" type="text" name="price" value="0">
             </label>
-            <label class="control">До
-              <input class="control-input" type="number" min="0" max="9000" name="price" value="от 0 до 9000">
+            <label class="control-price">До
+              <input class="control-input-price" type="text" name="price" value="9000">
             </label>
             <div class="range">
               <div class="range-scale">
@@ -133,9 +144,7 @@
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
-              </div>
-
-              
+              </div> 
             </div>
           </fieldset>
           <div class="button-wrap">
@@ -155,12 +164,23 @@
       <div class="view-wrap">
           <a class="view" href="#">
           <span class="visually-hidden">Показать таблицей</span>
+          <svg class="view-tab" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z" fill="#000"/>
+          </svg>
         </a>
         <a class="view" href="#">
           <span class="visually-hidden">Показать карточки</span>
+          <svg class="view-card" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+          </svg>
+
         </a>
         <a class="view" href="#">
           <span class="visually-hidden">Показать списком</span>
+            <svg class="view-list" width="16" height="14" viewBox="0 0 16 14" fill="none">
+              <path d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" fill="#000"/>
+            </svg>
+
         </a> 
       </div>
     </div>
@@ -296,7 +316,7 @@
           <li class="social-item">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
-              <svg aria-hidden="true" focusable="false" width="18" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
                 <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2l2.1-.7c0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6a3 3 0 0 1-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9a11 11 0 0 0 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="#83B3D3"/>
               </svg>
             </a>
@@ -304,7 +324,7 @@
           <li class="social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
-              <svg aria-hidden="true" focusable="false" width="10" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18" fill="none">
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="10" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18" fill="none">
                 <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3"/>
               </svg>
             </a>
@@ -312,7 +332,7 @@
           <li class="social-item">
             <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Youtube</span>
-              <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" fill="#83B3D3"/>
               </svg>
             </a>

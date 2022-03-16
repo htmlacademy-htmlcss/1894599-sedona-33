@@ -378,7 +378,7 @@ h2, h3, h4 {
       width: 140px;
       height: auto;
       border: none;
-      padding: 9px;
+      padding: 6px;
       margin-bottom: 20px;
   }
 
@@ -497,11 +497,13 @@ bottom: 10px;
 .range-scale {
     position: relative;
     margin-bottom: 16px;
-    border: 2px solid #FFFFFF;
+    background: #353f43;
+    height: 4px;
   }
   .range-bar {
     position: absolute;
-    border: 2px solid #FFFFFF;
+    height: 4px;
+    background: #FFFFFF;
   }
   .range-toggle {
     position: absolute;
@@ -535,18 +537,31 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   }
   
   .toggle-max {
-    top: -10px;
+    top: -8px;
     right: -10px;
   }
 
 
 /*состояния*/
-.navigation-link:hover {
-    color: rgba(117, 98, 87, 1);
+.navigation-icon:hover path,
+.navigation-icon-number:hover path {
+    fill: #756257;
 }
-.navigation-link:focus{
+
+.navigation-icon:active path, 
+.navigation-icon-number:active path {
+    fill: #756257;
+    opacity: 0.3;
+}
+
+.navigation-link:hover {
+    color: #756257;
+}
+
+.navigation-link:active{
     color: rgba(117, 98, 87, 0.3);
 }
+
 .button-header:hover,
 .booking-button:hover {
     color: #FFFFFF;
@@ -554,46 +569,346 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 .button-header:focus,
 .booking-button:focus {
-    color: rgba(255, 255, 255, 0.3);
     background: #615048;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
 }
+.button-header:active,
+.booking-button:active {
+    background: #615048;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.social-icon:hover path{
+    fill: #68A2CA;
+}
+.social-icon:focus path {
+    fill: #68A2CA;
+    border: 3px solid #83B3D3;
+}
+.social-icon:active {
+    fill: #68A2CA;
+}
+
+.suscribe-button:hover {
+    background: #68A2CA;
+border-radius: 0px 10px 10px 0px;
+}
+.suscribe-button:focus {
+    background: #68A2CA;
+border: 3px solid #756257;
+border-radius: 0px 10px 10px 0px;
+}
+.suscribe-button:active {
+    color: #FFFFFF;
+opacity: 0.3;
+background: #68A2CA;
+border-radius: 0px 10px 10px 0px;
+}
+
 .field-input {
     border: none;
-}
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    opacity: 0.6;
+    }
+
 .field-input:hover {
     background: #E6E6E6;
 }
 .field-input:focus {
+    background: #E6E6E6;
     border: 3px solid #83B3D3;
-    outline: none;
 }
-.contacts-phone:hover {
-color: #756257;
+.field-input:invalid {
+    background: #FFFFFF;
+    border: 2px solid #FF5757;
 }
-.contacts-phone:focus {
-    color: #756257;
-    opacity: 0.3;
+
+.view {
+text-decoration: none;
+display: inline-block;
+width: 48px;
+height: 48px;
 }
-.product-card-image:hover {
-    opacity: 0.6;
+.view-tab {
+    border: 2px solid #000000;
+
+border-radius: 4px;
 }
-.product-card-image:focus {
-    opacity: 0.3;
-}
-.product-card-button:hover {
-background: #615048;
-border: 3px solid #83B3D3;
+.view-card,
+.view-list {
+border: 2px solid #E6E6E6;
 border-radius: 4px;
 }
 
-/*не работает*/
-.product-card-button:focus {
-    color: rgba(255, 255, 255, 1);
+.view-tab,
+.view-card,
+.view-list {
+    padding: 10px;
+}
+.view-tab:hover,
+.view-card:hover,
+.view-list:hover,
+.view-tab:focus,
+.view-card:focus,
+.view-list:focus {
+    border: 2px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.select-control {
+color: #333333;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+}
+
+.button-loading {
+    cursor: pointer;
+}
+
+.button-pagination-one,
+.button-pagination {
     border: none;
+    margin: 8px;
+}
+.button-pagination:hover{
+background: #68A2CA;
+border-radius: 4px;
+}
+.button-pagination:focus {
+    background: #68A2CA;
+    border: 3px solid #756257;
+    border-radius: 4px;
+}
+.button-pagination:active {
+    background: #68A2CA;
+    border-radius: 4px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.button-reset:hover {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.button-reset:focus {
+    color: #FFFFFF;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+.button-reset:active {
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.button-blue:hover{
+    background: #68A2CA;
+    border-radius: 4px;
+}
+.button-blue:focus {
+    background: #68A2CA;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+}
+.button-blue:active {
+    background: #68A2CA;
+    border-radius: 4px;
+    color: #FFFFFF;
+    opacity: 0.3;
 }
 
 
 
+.contacts-phone:hover {
+    color: #756257;
+}
+.contacts-phone:focus {
+    color: #756257;
+    border: 3px solid #83B3D3;
+}
+.contacts-phone:active {
+    color: #756257;
+    opacity: 0.3;
+}
+
+.product-card-image:hover {
+    opacity: 0.6;
+}
+.product-card-image:focus{
+    border: 3px solid #83B3D3;
+}
+.product-card-image:active {
+    opacity: 0.3;
+}
+.product-card-button:hover {
+    background: #615048;
+    border-radius: 4px;
+}
+.product-card-button:focus {
+    background: #615048;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+.product-card-button:active {
+    background: #615048;
+    border-radius: 4px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.product-card-button-blue:hover {
+    background: #68A2CA;
+    border: 1px solid #756257;
+    border-radius: 4px;
+}
+.product-card-button-blue:focus{
+    background: #68A2CA;
+    border: 3px solid #756257;
+    border-radius: 4px;
+}
+.product-card-button-blue:active {
+    background: #68A2CA;
+    border: 1px solid #756257;
+    border-radius: 4px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.buttom-green:hover {
+    background: #6C9E42;
+    border-radius: 4px;
+}
+.buttom-green:focus {
+background: #6C9E42;
+border: 3px solid #756257;
+border-radius: 4px;
+}
+.buttom-green:active {
+    color: #FFFFFF;
+    opacity: 0.3;
+    background: #6C9E42;
+    border-radius: 4px;
+}
+
+
+
+.catalog-filter-group {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+  }
+
+  .control {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+ .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #FFFFFF;
+border-radius: 4px;
+  }
+
+  .control:hover input ~ .checkmark {
+    background: rgba(255, 255, 255, 0.6);
+    
+  }
+  .contril input:checked ~ .checkmark {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .control input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .control .checkmark:after {
+    left: 5px;
+    top: -1px;
+    width: 5px;
+    height: 13px;
+    border: solid #3F5E72;;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+  .checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+  }
+  .control-radio:hover input ~ .checkmark-radio {
+    background-color: #FFFFFF;
+  }
+
+  .control-radio input:checked ~ .checkmark-radio {
+    background-color: #ffffff;
+  }
+  .checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .control-radio input:checked ~ .checkmark-radio:after {
+    display: block;
+  }
+  
+  .control-radio .checkmark-radio:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3F5E72;
+  }
+
+  .control-price {
+      display: flex;
+      margin-bottom: 10px;
+      
+  }
+  .control-input-price {
+      display: flex;
+      width: 64px;
+      border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+
+ 
 
 
 
@@ -623,7 +938,8 @@ border-radius: 4px;
     justify-content: space-between;
     flex-wrap: wrap;
     width: auto;
-    margin: 20px 0;
+    margin: 20px 0px;
+    padding-left: 10px;
 }
 .modal-close-button {
     position: absolute;
@@ -635,6 +951,14 @@ border-radius: 4px;
     border-radius: 50%;
     cursor: pointer;
   } 
+  .modal-close-button:hover{
+    background: #E6E6E6;
+  }
+  .modal-close-button:focus {
+    background: #E6E6E6;
+    border: 3px solid #83B3D3; 
+  }
+  
 
   .modal-title {
     margin: 0;
@@ -664,6 +988,7 @@ border-radius: 4px;
     border-radius: 4px;
     border: none;
    overflow: hidden;
+   width: 420px;
 }
 
 .form-adults,
@@ -750,11 +1075,13 @@ fill: #a9a9a9;
 .button-calendar {
     display: flex;
     align-items: center;
-    width: min-content;
+    width: auto;
     padding: 0;
+    margin: 0;
     background: transparent;
     border: none;
 }
+
 .button-calendar:hover,
 .button-calendar:focus {
     background: transparent;
@@ -783,6 +1110,29 @@ padding-left: 160px;
 }
 .booking-text-correctly {
     color: #333333;
+}
+
+.modal-booking-button:hover {
+    background: #68A2CA;
+    border-radius: 10px;
+}
+.modal-booking-button:focus {
+    background: #68A2CA;
+    border: 3px solid #756257;
+    border-radius: 10px;
+}
+.modal-booking-button:active{
+    background: #68A2CA;
+    border-radius: 10px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.form-fied-button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: min-content;
+    display: inline-block;
 }
 
 .modal-container-close {

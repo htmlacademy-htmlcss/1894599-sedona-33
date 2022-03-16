@@ -344,6 +344,16 @@ body {
     line-height: 23px;
     color: #333333;
   }
+.hostel-page-select {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 15px;
+  width: 160px;
+}
 
 .catalog-filter-title{
 margin-bottom: 13px;
@@ -352,3 +362,5 @@ margin-bottom: 13px;
   display: block;
   margin-bottom: 13px;
 }
+
+
